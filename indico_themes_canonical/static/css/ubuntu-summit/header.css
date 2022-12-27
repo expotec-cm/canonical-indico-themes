@@ -1,0 +1,136 @@
+/* ----------- Styles for the conference header ----------- */
+
+/*
+Wraps around the upper part of the conference header.
+*/
+.confheader {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(233, 84, 32, 1) 98%);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  height: 399px;
+}
+
+/*
+Wraps around the title box
+*/
+.confTitleBox {
+  background: none;
+  display: flex;
+  margin: auto;
+  padding: 80px 20px;
+  position: relative;
+  text-align: left;
+  width: var(--full-width);
+}
+
+/*
+The style for the title text.
+*/
+.confTitle {
+  border-left: 4px solid var(--brand-orange);
+  display: inline-block;
+  margin-left: var(--global-margin-left);
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.headerLogo {
+  display: block;
+  height: 251px;
+  pointer-events: none;
+  position: absolute;
+  top: 021px;
+  left: 030px;
+}
+
+.confTitleBox > .confTitle > h1 {
+  color: var(--brand-white) !important;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.confTitleBox > .confTitle > h2 {
+  color: var(--brand-white) !important;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Overides large margins below custom registration fields */
+.ui.form.i-box-content .field:last-child {
+  margin-bottom: 0;
+}
+
+/* Style for the announcement */
+.simpleTextAnnouncement {
+  background: none;
+  border: none;
+  color: var(--brand-white) !important;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 1250px) {
+  .confTitleBox {
+    width: 100%;
+    display: block;
+    padding: 40px 20px;
+  }
+
+  .confTitle {
+    width: 100%;
+    position: absolute;
+    left: -130px;
+  }
+  
+  .confheader {
+    height: 316px;
+  }
+
+ .headerLogo {
+    display: block;
+    height: 151px;
+    pointer-events: none;
+    position: absolute;
+    top: 021px;
+    left: 030px;
+  }
+
+}
+
+@media screen and (max-width: 1620px) {
+  .headerLogo {
+    left: 030px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+
+  .confTitleBox {
+    width: 70%;
+    display: block;
+    padding: 40px 20px;
+  }
+  
+  .confTitle {
+    width: 100%;
+    position: absolute;
+    top: 021px;
+    left: -280px;
+   }
+
+  .headerLogo {
+    display: block;
+    height: 101px;
+    pointer-events: none;
+    position: absolute;
+    top: 061px;
+    left: -040px;
+  }
+
+
+  .confheader {
+    height: 330px;
+  }
+}

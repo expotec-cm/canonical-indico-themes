@@ -1,0 +1,18 @@
+/* --------- Style for the programme page -------- */
+ul.sub-tracks li .track-title h3 {
+  color: var(--brand-black);
+  font-size: 1.22rem !important;
+}
+
+ul.sub-tracks li .track-title .track-code {
+  color: var(--brand-black);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Removes the quotation styling found in the main description */
+.quotation.tracks {
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+}

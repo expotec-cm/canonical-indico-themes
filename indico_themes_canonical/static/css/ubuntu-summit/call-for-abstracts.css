@@ -1,0 +1,131 @@
+/* ---------- Style for Call to Abstracts/Proposals page ---------- */
+
+/* Style for deadline progress bar */
+ul.steps li.completed .circle::before {
+  background-color: var(--brand-blue);
+  border-color: #245987;
+}
+
+ul.steps li.completed .horizontal-line {
+  background-color: var(--brand-blue);
+}
+
+ul.steps .circle::before {
+  border-color: var(--brand-warm-grey);
+}
+
+ul.steps .horizontal-line {
+  background-color: var(--brand-warm-grey);
+}
+
+/* Style for subimission modal forms */
+.ui-dialog-titlebar {
+  background-color: var(--brand-white) f !important;
+  font-size: 1.306rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.md-preview-wrapper.edit {
+  background: none;
+  border: none;
+}
+
+.wmd-panel,
+#person-link-field-person_links,
+.ui.attached.segment {
+  border-color: rgba(0, 0, 0, 0.56);
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button {
+  background: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:hover {
+  background: var(--brand-off-white);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:last-child {
+  border-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.ui[class*="bottom attached"].buttons .button:first-child {
+  border: none;
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button.disabled {
+  color: var(--brand-warm-grey) !important;
+  opacity: 1 !important;
+}
+
+.ui.buttons .button.toggle.active {
+  background: none !important;
+  color: var(--brand-black) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  border-left: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.ui.buttons .button.toggle.active:hover {
+  background: var(--brand-off-white) !important;
+  color: var(--brand-black) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  border-left: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.i-checkbox input[type="checkbox"] {
+  align-self: center;
+}
+
+/* Style for 'add myself' */
+a.ui.blue.label {
+  background-color: var(--brand-blue) !important;
+  border-color: var(--brand-blue) !important;
+}
+
+a.ui.blue.label:hover {
+  background-color: var(--brand-blue) !important;
+}
+
+/* Style for 'search' modal */
+.ui.modal > .header:not(.ui) {
+  font-size: 1.306rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+/* Style for 'enter manually' modal */
+button[form="final-modal-form-person-link-details"] {
+  height: 100%;
+}
+
+/* Style for 'unsaved changes' modal */
+.ui-dialog .ui-dialog-buttonpane {
+  background: none;
+}
+
+/* ---------- Responsiveness ---------- */
+
+@media screen and (max-width: 550px) {
+  ul.steps li {
+    flex-basis: 100%;
+  }
+
+  ul.steps li:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .call-for-abstracts .flexrow {
+    flex-flow: row wrap;
+  }
+}

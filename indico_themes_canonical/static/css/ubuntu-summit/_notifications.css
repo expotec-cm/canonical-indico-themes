@@ -1,0 +1,116 @@
+/* ---------- Style for notifications ---------- */
+
+/* Style for cta boxes */
+.action-box.warning {
+  background: var(--brand-white);
+  border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
+}
+
+/* Styles for dafualt tooltip */
+.qtip-default,
+.qtip-default.informational {
+  background: var(--brand-black);
+  border: 1px solid var(--brand-black);
+  box-shadow: none;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.qtip {
+  min-width: 40px;
+}
+
+.qtip .qtip-tip {
+  color: var(--brand-black);
+}
+
+.qtip-content,
+.qtip-content p,
+.qtip-content div,
+.qtip-content h3,
+.qtip-content h4,
+.qtip-content h5,
+.qtip-content h6 {
+  color: var(--brand-white) !important;
+}
+
+.qtip-default.informational a {
+  color: var(--brand-white);
+  text-decoration: underline;
+}
+
+/* Style for white qtips found in the timetable */
+.qtip-default.qbubble.balloon-qtip .qtip-content .balloon * {
+  color: var(--brand-black) !important;
+}
+
+/* For pop up corner message notifications */
+.corner-message.highlight {
+  background: var(--brand-white);
+  border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
+}
+
+.corner-message .corner-message-action {
+  font-weight: 400;
+}
+
+/* Styling for the information boxes */
+.ui.positive.message,
+.action-box.accept {
+  background-color: var(--brand-white);
+  background-image: url("../../files/information-icon.svg") !important;
+  background-position: 1rem 1.2rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0 0.125rem 0.125rem 0;
+  box-shadow: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+
+.ui.positive.message::before,
+.action-box.accept::before {
+  background-color: var(--brand-blue);
+  bottom: -1px;
+  content: "";
+  height: auto;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 0.1875rem;
+  z-index: 1;
+}
+
+/* Style for CTA's */
+.action-box.highlight {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid var(--brand-warm-grey);
+  margin-bottom: 2rem;
+  padding: 1rem 0 0 0;
+}
+
+.action-box.highlight .section {
+  display: block;
+}
+
+.action-box.highlight .section .label {
+  display: inline-block;
+  font-size: 1.706rem;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+.action-box.highlight .toolbar {
+  padding: 0;
+  margin-top: 1rem;
+}

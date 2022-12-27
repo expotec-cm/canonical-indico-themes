@@ -1,0 +1,95 @@
+/* Style for the highlight buttons */
+
+.i-button.next::after {
+  content: "";
+}
+
+.ui.primary.button,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"] {
+  background: var(--button-green);
+  border: 1px solid var(--button-green);
+  border-radius: 0.125rem;
+  color: var(--brand-white) !important;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+}
+
+.ui.primary.button:hover,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"]:hover {
+  background: var(--button-green_hover);
+  border: 1px solid var(--button-green_hover);
+  color: var(--brand-white);
+  text-decoration: none;
+}
+
+.ui.primary.button.disabled,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"].disabled,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"][disabled] {
+  background: var(--button-green_hover) !important;
+  border-color: var(--button-green_hover) !important;
+  opacity: 0.33;
+}
+
+/* Style for standard buttons */
+
+.i-button:not(.subtle).highlight,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color),
+.i-button.highlight.text-color.outline,
+.i-button:not(.subtle),
+.i-button:not(.label),
+.toolbar .i-button:not(.label),
+.i-button.highlight:not(.label):not(.borderless):not(.text-color),
+.ui.modal .actions .ui.button:not(.highlighted):not(.primary) {
+  background: var(--brand-white);
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 0.125rem;
+  color: var(--brand-black);
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+}
+
+.i-button:hover,
+.i-button.highlight.text-color.outline:hover,
+.i-button:not(.subtle):not(.subtle):hover,
+.i-button:not(.label):hover,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
+.ui.modal .actions .ui.button:not(.highlighted):not(.primary):hover {
+  background: var(--brand-white);
+  background-color: var(--brand-off-white);
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  box-shadow: none;
+  color: var(--brand-black);
+  text-decoration: none;
+}
+
+.i-button.disabled {
+  background: var(--brand-white) !important;
+  border: 1px solid rgba(0, 0, 0, 0.56) !important;
+  border-radius: 0.125rem;
+  color: var(--brand-black) !important;
+  cursor: not-allowed;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+  opacity: .33;
+}
+
+.ui-button {
+  background: var(--brand-white) !important;
+  color: var(--brand-black);
+}
+
+.ui-button:hover {
+  background: var(--brand-off-white) !important;
+  color: var(--brand-black);
+}
+
+.item-subitems.toolbar a.i-button.js-switch-view.highlight {
+  font-weight: 500;
+}
+
+.item-subitems.toolbar a.i-button.js-switch-view.highlight:hover {
+  background: var(--brand-white);
+}

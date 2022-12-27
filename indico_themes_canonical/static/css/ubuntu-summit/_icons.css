@@ -1,0 +1,41 @@
+/* Styl for calander and clock icon */
+.generic-data .header-data::before {
+  color: var(--brand-warm-grey);
+}
+
+/* Style for the ticket icon */
+.icon-ticket::before {
+  color: var(--brand-warm-grey);
+}
+.i-button.accept.icon-ticket:not(.label):not(.borderless):not(.text-color)::before {
+  color: var(--brand-white);
+}
+
+/* Style for location icon */
+.icon-location::before {
+  color: var(--brand-warm-grey);
+}
+
+/* Style for speaker icon */
+.speaker-list .icon-user::before {
+  color: var(--brand-warm-grey);
+}
+
+/* Style for paperclip icon */
+.icon-attachment::before {
+  color: var(--brand-warm-grey);
+}
+
+/* Style for Date/Time icon */
+.icon-time::before {
+  color: var(--brand-warm-grey);
+}
+
+.i-button.icon-time::before {
+  color: var(--brand-black);
+}
+
+/* Style for chairperson icon */
+.icon-user-chairperson::before {
+  color: var(--brand-warm-grey);
+}
